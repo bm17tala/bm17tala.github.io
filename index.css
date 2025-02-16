@@ -17,4 +17,5 @@ article p {
 
 .featured:hover {
     background-color: #FFB300;
+    transition: 0.25s;
 }

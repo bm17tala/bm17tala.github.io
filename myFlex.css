@@ -1,0 +1,49 @@
+/* Additional styles for fun */
+.red { background: tomato; }
+.blue { background: dodgerblue; }
+.green { background: mediumseagreen; }
+.orange { background: orange; }
+.purple { background: rebeccapurple; }
+
+.flex_container { 
+    background-color: lightgray;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.flex_item {
+    width: 100px;
+    height:100px; 
+    color:white; 
+    font-size:2em;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 600px){ 
+    .flex_container{
+        flex-direction: row;
+    }
+
+    .flex_item{
+        color: grey;
+    }
+}
+
+@media (min-width: 900px){ 
+    .flex_container{
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .flex_item{
+        color: purple;
+        margin-left:1vw;
+        margin-right:1vw;
+    }
+}

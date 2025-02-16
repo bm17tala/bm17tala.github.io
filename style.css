@@ -1,42 +1,54 @@
-
-
-header{
-    text-align: center;
+header {
+  text-align: center;
 }
 
 .sender_address {
-    text-align: right;
+  text-align: right;
 }
 
 .receiver_address {
-    text-align: left;
+  text-align: left;
 }
 
-address{
-    /* background-color: #AED581; */
+address {
+  /* background-color: #AED581; */
 }
+
+img {
+  width: 20%;
+  transition: 0.5s;
+}
+img:hover {
+  width:50%;
+  transition: 0.5s; 
+}
+
+/* add some more animations! submit letter, github pages link */
+
+/* ---below provided by default--- */
 
 body {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .sender-column {
-    text-align: right;
-  }
-  
-  h1 {
-    font-size: 1.5em;
-  }
-  
-  h2 {
-    font-size: 1.3em;
-  }
-  
-  p,ul,ol,dl,address {
-    font-size: 1.1em;
-  }
-  
-  p, li, dd, dt, address {
-    line-height: 1.5;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sender-column {
+  text-align: right;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+p,ul,ol,dl,address {
+  font-size: 1.1em;
+}
+
+p,li,dd,dt,address {
+  line-height: 1.5;
+}
+
