@@ -5,41 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Friends</title>
         <link rel="stylesheet" href="common_style.css">
+        <style>
+
+            main{
+                flex-direction: column;
+            }
+    
+            #friends{
+                display:flex;
+            }
+    
+            section{
+                display:flex;
+                align-items: center;
+                margin: 100px;
+            }
+    
+            aside {
+                text-align: center;
+            }
+    
+            section > aside{
+                margin: 0px;
+            }
+    
+            section > aside > img {
+                width:250px;
+                border-radius: 100%;
+            }
+    
+            section > * {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+        </style>
     </head>
-    <style>
-
-        main{
-            flex-direction: column;
-        }
-
-        #friends{
-            display:flex;
-        }
-
-        section{
-            display:flex;
-            align-items: center;
-            margin: 100px;
-        }
-
-        aside {
-            text-align: center;
-        }
-
-        section > aside{
-            margin: 0px;
-        }
-
-        section > aside > img {
-            width:250px;
-            border-radius: 100%;
-        }
-
-        section > * {
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-    </style>
+    
     <body>
 
         <header>
