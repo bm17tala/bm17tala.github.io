@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="common_style.css">
+        <style>
+            main{
+                align-items: stretch;
+            }
+
+            menu, article, aside{
+                margin: 0px;
+                min-height:100%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+
+            <nav  class="header-footer">
+                <div id="webpage-name">
+                    <a href="/">bm17tala-github-io</a>:/blog$
+                </div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/friends.html">Friends</a></li>
+                    <li><a href="/blog.html" class="active">Blog</a></li>
+                    <li><a href="/aboutme.html">About</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main style="align-items:flex-start; height:100%;">
+
+            <menu style="width: 20vw;">
+                <h1>Blog Contents</h1>
+                <ul>
+                    <li>
+                        <a href="#bot-ross">Bot Ross Robotics Project</a>
+                        <ul>
+                            <li><a href="#br-desc">Description</a></li>
+                            <li><a href="#br-img">Images</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sorting-algorithm">Sorting Algorithm Visualizer</a>
+                        <ul>
+                            <li><a href="#sort-alg-desc">Description</a></li>
+                            <li><a href="#sort-alg-img">Images</a></li>
+                        </ul>
+                    </li>
+                    <li>
+
+                        <a href="#oc-for-the-ds">OC for the Nintendo DS</a>
+                        <ul>
+                            <li><a href="#oc-desc">Description</a></li>
+                            <li><a href="#oc-img">Images</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </menu>
+            <article style="width: 60vw;">
+                <div id="bot-ross" class="project">
+
+                    <div id="br-desc">
+                        <h1>Bot Ross Robotics Project</h1>
+                        <p>
+                            This project utilized the X3Plus robot running ROS to make the robot replicate drawings 
+                            inputted into reality This was a semester-long project completed with a peer in the Siena College 
+                            CSIS-370 Robotics course.
+                        </p>
+    
+                        <p>
+                            The main GUI application along with the graphing portion and calculations towards how the 
+                            robot should move are within paint.py. The commands to actually move the robot are within
+                            main.py and are imported into and called from paint.py. Both of these files are inside 
+                            the scripts folder. Otherwise, other files are included as reference material for our
+                            main project.
+                        </p>
+    
+                        <p>
+                            This project was featured in a Siena College news article on December 20th, 2024.
+                        </p>
+                    </div>
+                    
+                    
+                    <ul id="br-img">
+                        <li>
+                            Image of the robot in the process of drawing.
+                            <br>
+                            <img style="width:200px;" src="res/robot1.png" alt="Image of the robot in the process of drawing.">
+                        </li>
+                        <li>
+                            Our poster demonstrating the project.
+                            <br>
+                            <img style="width:400px;" src="res/robot_poster.png" alt="Our poster demonstrating the project.">
+                        </li>
+                    </ul>
+                    
+
+                    
+                </div>
+
+                <div id="sorting-algorithm" class="project">
+                    <div id="sort-alg-desc">
+                        <h1>Sorting Algorithm Visualizer</h1>
+
+                        <p>
+                            This project showcases the efficiency of several different sorting algorithms using a
+                            graphical representation of data from Dr. Teresco's METAL project. The user may also
+                            run tests on the METAL data to determine the speed of each algorithm on their machine.
+                            This project was completed with a peer for the 2024 Siena College Academic Showcase in the
+                            CSIS-385 Algorithms course.
+                        </p>
+                    </div>
+
+                    <ul id="sort-alg-img">
+                        <li>
+                            Visualized BubbleSort Algorithm running on BLR-region.tmg
+                            <br>
+                            <img style="width:500px;" src="https://raw.githubusercontent.com/bm17tala/sorting-algorithm-visualizer/refs/heads/main/screenshots/visualizer.png" alt="Visualized BubbleSort Algorithm running on BLR-region.tmg">
+                        </li>
+                        <li>
+                            Completed tests of sorting algorithms for latitudes within BLR-region.tmg
+                            <br>
+                            <img style="width:500px;" src="https://raw.githubusercontent.com/bm17tala/sorting-algorithm-visualizer/refs/heads/main/screenshots/tests.png" alt="Completed tests of sorting algorithms for latitudes within BLR-region.tmg">
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div id="oc-for-the-ds" class="project">
+
+                    <div id="oc-desc">
+                        <h1>Original Campaign for the Nintendo DS</h1>
+                        <p>
+                            This is a Nintendo DS port of Original Campaign (a game concept made by a friend of mine), 
+                            I worked on this during the break between my Fall 2023 and Spring 2024 semesters as a personal project.
+                            This was created using the <a href="https://github.com/knightfox75/nds_nflib">NightFox</a> and 
+                            <a href="https://libnds.devkitpro.org/">Libnds</a> libraries.
+                        </p>
+                    </div>
+
+                    <ul id="oc-img">
+                        <li>
+                            OC for the DS running within the no$gba emulator.
+                            <br>
+                            <img style="width:250px" src="https://raw.githubusercontent.com/bm17tala/oc-for-the-ds/refs/heads/main/screenshots/menu_emulator.png" alt="OC for the DS running within the no$gba emulator.">
+                        </li>
+                        <li>
+                            OC for the DS running on a real console.
+                            <br>
+                            <img style="width:400px" src="https://raw.githubusercontent.com/bm17tala/oc-for-the-ds/refs/heads/main/screenshots/menu_console.jpeg" alt="OC for the DS running on a real console.">
+                        </li>
+                    </ul>
+
+                </div>
+            </article>
+            <aside style="width: 20vw;">
+                <h1>GitHub Links</h1>
+                <ul>
+                    <li><a href="https://github.com/bm17tala/ros-whiteboard" target="_blank">Bot Ross Robotics Project</a></li>
+                    <li><a href="https://github.com/bm17tala/academic-showcase" target="_blank">Sorting Algorithm Visualizer</a></li>
+                    <li><a href="https://github.com/bm17tala/oc-for-the-ds" target="_blank">Original Campaign for the Nintendo DS</a></li>
+                </ul>
+
+            </aside>
+
+        </main>
+        <footer class="header-footer">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/bm17tala">
+                        <img src="res/github-mark-white.png" alt="GitHub Logo" style="width:30px; margin-right:10px;">GitHub
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/brenden-talasco/">
+                        <img src="res/InBug-White.png" alt="LinkedIn Logo" style="width:30px; margin-right:10px;">LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Friends</title>
+        <link rel="stylesheet" href="common_style.css">
+    </head>
+    <style>
+
+        main{
+            flex-direction: column;
+        }
+
+        #friends{
+            display:flex;
+        }
+
+        section{
+            display:flex;
+            align-items: center;
+            margin: 100px;
+        }
+
+        aside {
+            text-align: center;
+        }
+
+        section > aside{
+            margin: 0px;
+        }
+
+        section > aside > img {
+            width:250px;
+            border-radius: 100%;
+        }
+
+        section > * {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+    <body>
+
+        <header>
+
+            <nav  class="header-footer">
+                <div id="webpage-name">
+                    <a href="/">bm17tala-github-io</a>:/my/friends$
+                </div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/friends.html" class="active">Friends</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/aboutme.html">About</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+
+            <aside>
+                <h1>
+                    My Friends
+                </h1>
+                <p>I have some of my friends listed below. I've collaborated with them on projects and/or met them outside school.</p>
+            </aside>
+
+            <div id="friends">
+                <section>
+                    <aside>
+                        <img class="pfp" src="res/sean.jpg" alt="Sean O'Malley">
+                    </aside>
+                        
+                    <article>
+                        <h1>
+                            Sean O'Malley
+                        </h1>
+                        <p>
+                            Sean and I worked together on the Sorting Algorithm Visualizer project in our CSIS 385 Algorithms course. We also have been friends since high school!
+                        </p>
+                    </article>
+                </section>
+    
+                <section>
+                    <aside>
+                        <img class="pfp" src="res/maxwell.jpg" alt="Maxwell Vanderbeek">
+                    </aside>
+                    <article>
+                        <h1>
+                            Maxwell Vanderbeek
+                        </h1>
+                        <p>
+                            Max and I worked together on the Bot Ross project during in the CSIS 370 robotics course with Dr. Liu in Fall 2024.
+                        </p>
+                    </article>
+                </section>
+            </div>
+            
+
+        </main>
+        <footer class="header-footer">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/bm17tala">
+                        <img src="res/github-mark-white.png" alt="GitHub Logo" style="width:30px; margin-right:10px;">GitHub
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/brenden-talasco/">
+                        <img src="res/InBug-White.png" alt="LinkedIn Logo" style="width:30px; margin-right:10px;">LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+    </body>
+</html>
