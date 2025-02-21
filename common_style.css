@@ -5,7 +5,7 @@
 }
 
 
-body{
+html, body{
     animation: backgroundAnimation 30s infinite;
     color:white;
     margin:0px;
