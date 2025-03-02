@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey Continues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>The Journey Continues</h1>
+        <p>With the guardian's riddle behind you, the path forward splits into three. Each route is known to favor certain traits: strength, wisdom, or stealth. Choose your path wisely, as it will influence the challenges you face ahead.</p>
+        
+        <form id="journeyContinuesForm" type="GET" action="page6.html">
+            <label>Choose your path:</label>
+            <select id="pathChoice" name="pathChoice" required>
+                <option value="">--Please choose an option--</option>
+                <option value="strength">The Path of Strength</option>
+                <option value="wisdom">The Path of Wisdom</option>
+                <option value="stealth">The Path of Stealth</option>
+            </select>
+            <input type="submit" value="Continue on Your Journey">
+        </form>
+
+        <p>Your choice will not only test your abilities but also reveal deeper truths about your character.</p>
+    </section>
+
+    <script>
+        "use strict";
+
+        const pathChoice = document.getElementById("pathChoice");
+        const journeyContinuesForm = document.getElementById("journeyContinuesForm");
+
+        pathChoice.addEventListener("change", () => {
+            switch (pathChoice.value){
+                case "strength":
+                    document.body.style.backgroundColor = "#FFAAAA";
+                    break;
+                case "wisdom":
+                    document.body.style.backgroundColor = "#AAFFAA";
+                    break;
+                case "stealth":
+                    document.body.style.backgroundColor = "#AAAAFF";
+                    journeyContinuesForm.action = "page5b.html";
+                    break;
+                default:
+                    document.body.style.backgroundColor = "#FFFFFF";
+            }
+        });
+    </script>
+</body>
+</html>
